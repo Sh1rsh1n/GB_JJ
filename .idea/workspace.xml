@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar_1 task_1 commit #003_1">
-      <change beforePath="$PROJECT_DIR$/Seminar_1/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_1/README.MD" afterDir="false" />
-    </list>
+    <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar_1 task_1 commit #004" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +80,7 @@
       <updated>1700984447040</updated>
       <workItem from="1700984448246" duration="315000" />
       <workItem from="1700984779415" duration="311000" />
-      <workItem from="1700985247279" duration="2187000" />
+      <workItem from="1700985247279" duration="2272000" />
     </task>
     <task id="LOCAL-00001" summary="Seminar_1 task_1 commit #001">
       <option name="closed" value="true" />
@@ -116,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700987231647</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Seminar_1 task_1 commit #004">
+      <option name="closed" value="true" />
+      <created>1700987542471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700987542471</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +144,7 @@
     <MESSAGE value="Seminar_1 task_1 commit #002" />
     <MESSAGE value="Seminar_1 task_1 commit #003" />
     <MESSAGE value="Seminar_1 task_1 commit #003_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seminar_1 task_1 commit #003_1" />
+    <MESSAGE value="Seminar_1 task_1 commit #004" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seminar_1 task_1 commit #004" />
   </component>
 </project>
