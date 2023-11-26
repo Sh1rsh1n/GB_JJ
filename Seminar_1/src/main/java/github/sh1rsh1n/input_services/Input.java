@@ -1,4 +1,4 @@
-package java.github.sh1rsh1n.seminar_1.task1.user_service;
+package github.sh1rsh1n.input_services;
 
 
 /**

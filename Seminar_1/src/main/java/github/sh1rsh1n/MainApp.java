@@ -1,9 +1,9 @@
-package java.github.sh1rsh1n.seminar_1.task1;
+package github.sh1rsh1n;
 
-import java.github.sh1rsh1n.seminar_1.task1.handlers.NumberHandler;
-import java.github.sh1rsh1n.seminar_1.task1.handlers.GettingAverageNumber;
-import java.github.sh1rsh1n.seminar_1.task1.user_service.ConsoleInput;
-import java.github.sh1rsh1n.seminar_1.task1.user_service.Input;
+import github.sh1rsh1n.input_services.ConsoleInput;
+import github.sh1rsh1n.input_services.Input;
+import github.sh1rsh1n.number_handlers.GettingAverageNumber;
+import github.sh1rsh1n.number_handlers.NumberHandler;
 
 public class MainApp {
     

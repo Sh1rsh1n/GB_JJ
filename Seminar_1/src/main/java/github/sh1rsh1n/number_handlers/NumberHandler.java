@@ -1,4 +1,4 @@
-package java.github.sh1rsh1n.seminar_1.task1.handlers;
+package github.sh1rsh1n.number_handlers;
 
 
 /**
