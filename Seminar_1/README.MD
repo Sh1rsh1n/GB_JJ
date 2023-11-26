@@ -25,6 +25,11 @@ _**Программа принимает на вход любую строку,
 
 ![Result](images/result.png)
 
+**5. В класс _MainApp_ добавлен метод _getResult_, на вход которому передаются, класс реализующий интерфейс _Input_ (источник данных)
+и класс реализующий интерфейс _NumberHandler_ (обработчик чисел)**
+
+![MainApp](images/mainapp.png)
+
 **Результат вычислений:**
 
 ![Example](images/seminar1_task1_result.png)
