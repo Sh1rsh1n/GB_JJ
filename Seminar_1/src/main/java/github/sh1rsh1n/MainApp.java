@@ -19,6 +19,6 @@ public class MainApp {
     public static void main(String[] args) {
 
         int result = getResult(new ConsoleInput(), new GettingAverageNumber());
-        System.out.printf("Среднее значение: %d", result);
+        System.out.printf("Среднее значение: %d\n", result);
     }
 }
