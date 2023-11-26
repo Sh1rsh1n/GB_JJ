@@ -27,4 +27,4 @@ _**Программа принимает на вход любую строку,
 
 **Результат вычислений:**
 
-![Пример](/images/seminar1_task1_result.png)
+![Example](images/seminar1_task1_result.png)
