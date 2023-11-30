@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar_1 task_1 commit #004_1">
-      <change afterPath="$PROJECT_DIR$/Seminar_2/pom.xml" afterDir="false" />
+    <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar_2 init commit">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Dog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +39,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_opened_file_path": "C:/Users/asshi/IdeaProjects/GB_JJ/Seminar_1/src/main/java/github/sh1rsh1n",
+    "last_opened_file_path": "C:/Users/asshi/IdeaProjects/GB_JJ/Seminar_2/src/main/java/github/sh1rsh1n/temp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,13 +53,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_2\src\main\java\github\sh1rsh1n\temp" />
+      <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_2\src\main\java\github\sh1rsh1n\task2" />
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_1\src\main\java\github\sh1rsh1n" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.github.sh1rsh1n.task1.MainApp">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.MainApp" />
       <module name="Seminar_1" />
@@ -66,8 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="github.sh1rsh1n.task1.MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.task1.MainApp" />
+      <module name="Seminar_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.sh1rsh1n.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.github.sh1rsh1n.task1.MainApp" />
         <item itemvalue="Application.MainApp" />
       </list>
     </recent_temporary>
@@ -83,7 +106,8 @@
       <workItem from="1700984448246" duration="315000" />
       <workItem from="1700984779415" duration="311000" />
       <workItem from="1700985247279" duration="2272000" />
-      <workItem from="1700987898754" duration="659000" />
+      <workItem from="1700987898754" duration="714000" />
+      <workItem from="1701362424756" duration="6054000" />
     </task>
     <task id="LOCAL-00001" summary="Seminar_1 task_1 commit #001">
       <option name="closed" value="true" />
@@ -141,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700988220052</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Seminar_2 init commit">
+      <option name="closed" value="true" />
+      <created>1700988604220</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700988604220</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +197,7 @@
     <MESSAGE value="Seminar_1 task_1 commit #003_1" />
     <MESSAGE value="Seminar_1 task_1 commit #004" />
     <MESSAGE value="Seminar_1 task_1 commit #004_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seminar_1 task_1 commit #004_1" />
+    <MESSAGE value="Seminar_2 init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seminar_2 init commit" />
   </component>
 </project>

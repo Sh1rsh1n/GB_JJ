@@ -1,25 +1,75 @@
 package github.sh1rsh1n.task1;
 
-import github.sh1rsh1n.task1.pojo.Animal;
-import github.sh1rsh1n.task1.pojo.Dog;
+import github.sh1rsh1n.task1.pojo.*;
+
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+
 
 /**
  * MainApp
  */
 public class MainApp {
 
+    /**
+     * Вспомогательный метод, для перевода
+     * целочисленное значение модификатора доступа в строковое значение
+     * @param value int
+     * @return String
+     */
+    static String parseModifiers(int value) {
+        switch (value) {
+            case 0 -> {
+                return "package-private";
+            }
+            case 1 -> {
+                return "public";
+            }
+            case 2 -> {
+                return "private";
+            }
+            case 3 -> {
+                return "void";
+            }
+            case 4 -> {
+                return "protected";
+            }
+            default -> throw new RuntimeException();
+        }
+    }
+
     public static void main(String[] args) {
         
-        Dog dog1 = new Dog("Шарик", 7);
-        dog1.setOwnerName("Вова");
-        dog1.setType("Охотничья");
-        Dog dog2 = new Dog("Тузик", 3);
-        Dog dog3 = new Dog("Той", 4);
-        Cat cat1 = new Cat("Матроскин", 6);
-        Cat cat2 = new Cat("Рыжий", 2);
+        Dog dog = new Dog("Шарик", 7);
+        Cat cat = new Cat("Рыжий", 2);
 
-        Animal[] animals = new Animal[]{dog1, dog2, dog3, cat1, cat2};
+        Animal[] animals = new Animal[]{dog, cat};
 
+        Arrays.stream(animals).forEach(animal -> { // получаем поток объектов Animal
 
+            System.out.printf("Class: %s\n", animal.getClass().getSimpleName()); // выводим название класса
+
+            Arrays.stream(animal.getClass().getDeclaredFields()) // получаем поток полей
+                    .forEach(field -> { // проходим по всем полям и выводим результат
+                System.out.printf("\tField: %s %s %s \n", parseModifiers(field.getModifiers()), field.getType().getSimpleName(), field.getName());
+            });
+
+            Arrays.stream(animal.getClass().getDeclaredMethods()) // получаем поток методов
+                    .forEach(method -> { // проходим по всем методам
+                        method.setAccessible(true); // получаем доступ ко всем методам
+                System.out.printf("\tMethod: %s %s\n", method.getName(), method.getReturnType().getSimpleName());
+            });
+
+            Arrays.stream(animal.getClass().getDeclaredMethods()) // получаем поток методов
+                    .filter(method -> method.getName().equals("makeSound")) // отфильтруем методы по названию
+                    .forEach(method -> { // проходим по всем методам
+                        method.setAccessible(true); // получаем доступ ко всем методам
+                        try {
+                            method.invoke(animal); // вызываем метод makeSound() у классов, в которых он есть
+                        } catch (IllegalAccessException | InvocationTargetException e) {
+                            throw new RuntimeException(e);
+                        }
+                    });
+        });
     }
 }

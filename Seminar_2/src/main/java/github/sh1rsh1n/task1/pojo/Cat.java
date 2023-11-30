@@ -6,26 +6,20 @@ package github.sh1rsh1n.task1.pojo;
  */
 public class Cat extends Animal {
 
-    private boolean homeless;
+    public boolean homeless;
+
+    private String color;
 
     public Cat(){
-        this.homeless = true;
+        homeless = true;
+        color = "orange";
     }
     
     public Cat(String name, int age) {
         super(name, age);
     }
 
-    public boolean isHomeless() {
-        return this.homeless;
-    }
-
-    public void setHomeless(boolean homeless) {
-        this.homeless = homeless;
-    }
-
-    @Override
-    public void makeSound(){
+    private void makeSound(){
         System.out.println("MEOOOOOOOOOW!");
     }
 }
