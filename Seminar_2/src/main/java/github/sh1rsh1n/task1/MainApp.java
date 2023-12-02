@@ -56,8 +56,15 @@ public class MainApp {
 
             Arrays.stream(animal.getClass().getDeclaredMethods()) // получаем поток методов
                     .forEach(method -> { // проходим по всем методам
-                        method.setAccessible(true); // получаем доступ ко всем методам
-                System.out.printf("\tMethod: %s %s\n", method.getName(), method.getReturnType().getSimpleName());
+                        //method.setAccessible(true); // получаем доступ ко всем методам
+                        StringBuilder sb = new StringBuilder();
+                        Arrays.stream(method.getParameters()).forEach(param -> {
+                            sb.append(param.getType().getSimpleName());
+                            sb.append(" ");
+                            sb.append(param.getName());
+                        });
+
+                System.out.printf("\tMethod: %s %s %s(%s) {\n\t}\n", parseModifiers(method.getModifiers()), method.getReturnType().getSimpleName(), method.getName(), sb.toString());
             });
 
             Arrays.stream(animal.getClass().getDeclaredMethods()) // получаем поток методов
@@ -65,7 +72,7 @@ public class MainApp {
                     .forEach(method -> { // проходим по всем методам
                         method.setAccessible(true); // получаем доступ ко всем методам
                         try {
-                            method.invoke(animal); // вызываем метод makeSound() у классов, в которых он есть
+                            method.invoke(animal, "MEOOOOOOW!"); // вызываем метод makeSound() у классов, в которых он есть
                         } catch (IllegalAccessException | InvocationTargetException e) {
                             throw new RuntimeException(e);
                         }

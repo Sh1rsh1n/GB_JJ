@@ -1,6 +1,7 @@
 package github.sh1rsh1n.task2;
 
 import java.lang.reflect.Field;
+import java.util.Arrays;
 import java.util.UUID;
 
 public class QueryBuilder {
@@ -122,7 +123,21 @@ public class QueryBuilder {
      * @return
      */
     public String buildDeleteQuery(Class<?> clazz, UUID primaryKey){
-        return null;
+        StringBuilder sb = new StringBuilder("DELET FROM ");
+
+        if (clazz.isAnnotationPresent(Table.class)) {
+            sb.append(clazz.getSimpleName())
+            .append(" WHERE ");
+
+            Field idField = Arrays.stream(clazz.getDeclaredFields())
+            .filter(field -> field.getName().contains("id") && 
+            field.isAnnotationPresent(Column.class) &&
+            field.isAnnotationPresent(ColumId.class))
+            .findFirst().get();
+            sb.append(idField.getName()).append(" = ").append(primaryKey);
+            return sb.toString();
+        }
+        throw new RuntimeException();
     }
 
 }

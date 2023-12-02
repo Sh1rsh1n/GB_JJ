@@ -6,6 +6,7 @@ import java.util.UUID;
 public class Employee {
 
     @Column(name = "id", primaryKey = true)
+   // @ColumId
     private UUID id;
 
     @Column(name = "username")

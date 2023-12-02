@@ -19,7 +19,7 @@ public class Cat extends Animal {
         super(name, age);
     }
 
-    private void makeSound(){
-        System.out.println("MEOOOOOOOOOW!");
+    private void makeSound(String str){
+        System.out.println(str);
     }
 }
