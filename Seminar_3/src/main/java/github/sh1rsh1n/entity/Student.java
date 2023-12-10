@@ -28,13 +28,12 @@ public class Student implements Serializable {
         return gpa;
     }
 
-
     @Override
     public String toString() {
-        return "Student: {" +
-            " name='" + getName() + "'" +
-            ", age='" + getAge() + "'" +
-            "}";
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gpa=" + gpa +
+                '}';
     }
-
 }

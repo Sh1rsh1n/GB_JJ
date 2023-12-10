@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Seminar_1" />
         <module name="Seminar_2" />
+        <module name="Seminar_3" />
       </profile>
     </annotationProcessing>
   </component>

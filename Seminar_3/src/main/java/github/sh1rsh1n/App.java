@@ -11,7 +11,7 @@ public class App {
 
         Student st1 = new Student("Egor", 20, 8.7);
 
-        SimpleDataHandler.encodeData(st1, true);
+        SimpleDataHandler.encodeData(st1, false);
 
         Object object = SimpleDataHandler.decodeData(Student.class);
 

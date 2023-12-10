@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar_2 init commit">
+    <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar2 init commit Task2">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar_2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_2/src/main/java/github/sh1rsh1n/task1/pojo/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/src/main/java/github/sh1rsh1n/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/src/main/java/github/sh1rsh1n/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/src/main/java/github/sh1rsh1n/data_handlers/SimpleDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/src/main/java/github/sh1rsh1n/data_handlers/SimpleDataHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/src/main/java/github/sh1rsh1n/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/src/main/java/github/sh1rsh1n/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/data_handlers/SimpleDataHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/data_handlers/SimpleDataHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/entity/Student.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2Yhivskc9FyMol73RMTnUcM0z26" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -39,7 +48,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_opened_file_path": "C:/Users/asshi/IdeaProjects/GB_JJ/Seminar_2/src/main/java/github/sh1rsh1n/temp",
+    "last_opened_file_path": "C:/Users/asshi/IdeaProjects/GB_JJ/Seminar_3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,7 +70,20 @@
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.github.sh1rsh1n.task1.MainApp">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.App" />
+      <module name="Seminar_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.sh1rsh1n.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.MainApp" />
       <module name="Seminar_1" />
@@ -90,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Application.github.sh1rsh1n.task1.MainApp" />
         <item itemvalue="Application.MainApp" />
       </list>
@@ -107,7 +130,10 @@
       <workItem from="1700984779415" duration="311000" />
       <workItem from="1700985247279" duration="2272000" />
       <workItem from="1700987898754" duration="714000" />
-      <workItem from="1701362424756" duration="6054000" />
+      <workItem from="1701362424756" duration="7094000" />
+      <workItem from="1701886140302" duration="672000" />
+      <workItem from="1702220662941" duration="31000" />
+      <workItem from="1702220717278" duration="783000" />
     </task>
     <task id="LOCAL-00001" summary="Seminar_1 task_1 commit #001">
       <option name="closed" value="true" />
@@ -173,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700988604220</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Seminar2 commit #002 Task1 finish">
+      <option name="closed" value="true" />
+      <created>1701368784131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701368784131</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Seminar2 init commit Task2">
+      <option name="closed" value="true" />
+      <created>1701368839735</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701368839735</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +240,8 @@
     <MESSAGE value="Seminar_1 task_1 commit #004" />
     <MESSAGE value="Seminar_1 task_1 commit #004_1" />
     <MESSAGE value="Seminar_2 init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seminar_2 init commit" />
+    <MESSAGE value="Seminar2 commit #002 Task1 finish" />
+    <MESSAGE value="Seminar2 init commit Task2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seminar2 init commit Task2" />
   </component>
 </project>

@@ -34,8 +34,6 @@ public class SimpleDataHandler {
 
             System.out.printf("Объект %s сериализован.\n", obj.getClass().getSimpleName());
 
-        } catch (FileNotFoundException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
@@ -43,8 +41,7 @@ public class SimpleDataHandler {
 
     /**
      * декодирование данных из файла
-     * 
-     * @param clazz - класс, который мы ожидаем получить из данных в файле.
+     * @param clazz - класс, объект которого мы ожидаем получить из данных в файле.
      * @return Class
      */
     public static Object decodeData(Class<?> clazz) {
@@ -56,12 +53,8 @@ public class SimpleDataHandler {
             
             return clazz.cast(objectInputStream.readObject());
 
-        } catch (FileNotFoundException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
-        } catch (IOException ioException) {
+        } catch (IOException | ClassNotFoundException ioException) {
             ioException.printStackTrace();
-        } catch (ClassNotFoundException classNotFoundException) {
-            classNotFoundException.printStackTrace();
         }
         throw new RuntimeException();
     }
