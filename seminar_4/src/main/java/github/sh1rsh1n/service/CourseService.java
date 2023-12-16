@@ -1,5 +1,6 @@
 package github.sh1rsh1n.service;
 
+import github.sh1rsh1n.entity.Course;
 import github.sh1rsh1n.repository.CourseRepositoryImpl;
 
 public class CourseService {
@@ -10,13 +11,12 @@ public class CourseService {
         this.repository = repository;
     }
 
-    public static void saveCourse(Course Course) {
+    public void saveCourse(Course course) {
 
 
     }
 
-    public static void removeCourse(Course course){
+    public void removeCourse(Course course){
         
     }
-
 }

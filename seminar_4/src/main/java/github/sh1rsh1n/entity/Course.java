@@ -1,5 +1,6 @@
 package github.sh1rsh1n.entity;
 
+
 import javax.persistence.*;
 
 @Entity
