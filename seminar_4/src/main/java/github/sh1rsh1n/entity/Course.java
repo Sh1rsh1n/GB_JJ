@@ -2,6 +2,7 @@ package github.sh1rsh1n.entity;
 
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "courses")
@@ -51,6 +52,18 @@ public class Course {
         this.duration = duration;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Course course = (Course) o;
+        return id == course.id && duration == course.duration && Objects.equals(title, course.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, duration);
+    }
 
     @Override
     public String toString() {

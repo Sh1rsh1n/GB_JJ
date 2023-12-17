@@ -2,15 +2,13 @@ package github.sh1rsh1n.repository;
 
 import java.util.List;
 
-public interface Repository<E, EId> {
+public interface Repository<E> {
 
-    boolean add(E e);
-
-    boolean update(E e);
+    boolean save(E e);
 
     boolean remove(E e);
 
-    E getElementById(EId id);
+    E getElementById(Integer id);
 
     List<E> getAll();
     

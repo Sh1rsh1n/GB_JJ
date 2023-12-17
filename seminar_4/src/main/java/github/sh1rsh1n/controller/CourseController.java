@@ -11,18 +11,18 @@ import java.util.Scanner;
 
 public class CourseController {
 
-    private final Repository repository;
-    private final Service service;
+    private final Service<Course> service;
+
+    private final Scanner scanner;
 
     public CourseController() {
-        repository = new CourseRepositoryImpl();
+        Repository<Course> repository = new CourseRepositoryImpl();
         service = new CourseService(repository);
-//        insertData();
+        scanner = new Scanner(System.in);
     }
 
     public void start() {
 
-        Scanner scanner = new Scanner(System.in);
         String input = "";
 
         while (!input.equals("0")) {
@@ -33,6 +33,7 @@ public class CourseController {
             System.out.println("'НАЙТИ ПО ИДЕНТИФИКАТОРУ' ВВЕДИТЕ: 4");
             System.out.println("'НАЙТИ ВСЁ' ВВЕДИТЕ: 5");
             System.out.println("'ВЫХОД ИЗ ПРОГРАММЫ' ВВЕДИТЕ: 0");
+            System.out.print(">>> ");
 
             input = scanner.nextLine();
 
@@ -50,16 +51,55 @@ public class CourseController {
 
                     service.save(course);
                 }
+                case "2" -> {
+                    Course course = findCourseByID();
+                    System.out.printf("\nИЗМЕНЕНИЕ ПАРАМЕТРОВ КУРСА: %s, хотите продолжить введите 'Y'(yes)?", course.getTitle());
+
+                    if (scanner.nextLine().equalsIgnoreCase("y")) {
+                        System.out.print("ВВЕДИТЕ НАЗВАНИЕ КУРСА: ");
+                        String title = scanner.nextLine();
+                        System.out.print("ВВЕДИТЕ КОЛИЧЕСТВО ЧАСОВ: ");
+                        int duration = Integer.parseInt(scanner.nextLine());
+                        course.setTitle(title);
+                        course.setDuration(duration);
+                        service.save(course);
+                    }
+                }
+                case "3" -> {
+                    Course course = findCourseByID();
+                    System.out.printf("\nВЫ ХОТИТЕ УДАЛИТЬ КУРС: %s, хотите продолжить введите 'Y'(yes)?", course.getTitle());
+
+                    if (scanner.nextLine().equalsIgnoreCase("y")) {
+                        service.remove(course);
+                    }
+                }
+                case "4" -> {
+                    Course course = findCourseByID();
+                    System.out.println();
+                    printCourse(course);
+                }
+                case "5" -> {
+                    List<Course> courses = service.getAll();
+                    System.out.println();
+                    for (Course course : courses) {
+                        printCourse(course);
+                    }
+                    System.out.println();
+                }
+                case "0" -> System.out.println("ДО СВИДАНИЯ!!!");
                 default -> System.out.println("ВЫ ВВЕЛИ НЕКОРРЕКТНОЕ ЗНАЧЕНИЕ");
             }
         }
 
     }
 
-    private void insertData() {
-        service.save(new Course("Информатика", 40));
-        service.save(new Course("Математика", 50));
-        service.save(new Course("Физика", 20));
-        service.save(new Course("Геометрия", 30));
+    private Course findCourseByID() {
+        System.out.print("ВВЕДИТЕ ИДЕНТИФИКАТОР КУРСА: ");
+        int id = Integer.parseInt(scanner.nextLine());
+        return service.getElementById(id);
+    }
+
+    private void printCourse(Course course) {
+        System.out.printf("ID: %d КУРС: %s КОЛИЧЕСТВО ЧАСОВ: %d\n\n", course.getId(), course.getTitle(), course.getDuration());
     }
 }

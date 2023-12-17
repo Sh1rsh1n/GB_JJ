@@ -13,8 +13,8 @@ services:
     image: 'postgres:14-alpine'
     container_name: school_db_sh1rsh1n
     environment:
-      - POSTGRES_USER=pg_root
-      - POSTGRES_PASSWORD=pg_1amAccept
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
       - POSTGRES_DB=school_db
     ports:
       - '5432:5432'
