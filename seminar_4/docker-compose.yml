@@ -11,7 +11,7 @@ services:
 
   db:
     image: 'postgres:14-alpine'
-    container_name: db
+    container_name: school_db_sh1rsh1n
     environment:
       - POSTGRES_USER=pg_root
       - POSTGRES_PASSWORD=pg_1amAccept

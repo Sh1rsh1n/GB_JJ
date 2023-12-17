@@ -1,4 +1,4 @@
-drop schema if exists school_db cascade ;
+drop schema if exists school_db cascade;
 
 create schema school_db;
 

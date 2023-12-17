@@ -1,7 +1,7 @@
 package github.sh1rsh1n.repository;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import github.sh1rsh1n.entity.Course;
 import org.hibernate.Session;
@@ -9,29 +9,39 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class CourseRepositoryImpl implements Repository<Course, Integer> {
-
-    private final Session session;
+    private final SessionFactory sessionFactory;
+    private Session session;
 
     public CourseRepositoryImpl() {
-        this.session = connectionConfig();
+        sessionFactory = new Configuration()
+                .configure("hibernate.cfg.xml")
+                .addAnnotatedClass(Course.class)
+                .buildSessionFactory();
     }
 
     @Override
     public boolean add(Course course) {
-        if  (course != null) {
-            session.beginTransaction();
-            session.save(course);
-            session.getTransaction().commit();
-            return true;
+
+        try {
+            session = sessionFactory.getCurrentSession();
+            if (course != null) {
+                session.beginTransaction();
+                session.save(course);
+                session.getTransaction().commit();
+                return true;
+            }
+            return false;
+        } finally {
+            session.close();
         }
-        return false;
     }
 
     @Override
     public boolean update(Course course) {
-        if  (course != null) {
+        Optional<Course> optionalCourse = getAll().stream().filter(c -> c.getId() == course.getId()).findFirst();
+        if (optionalCourse.isPresent()) {
             session.beginTransaction();
-            session.saveOrUpdate(course);
+            session.update(optionalCourse.get());
             session.getTransaction().commit();
             return true;
         }
@@ -62,23 +72,17 @@ public class CourseRepositoryImpl implements Repository<Course, Integer> {
 
     @Override
     public List<Course> getAll() {
-        List<Course> courses = new ArrayList<>();
 
-        session.beginTransaction();
-        session.get()
-        session.getTransaction().commit();
+        try {
+            session = sessionFactory.getCurrentSession();
 
-        return null;
-    }
+            session.beginTransaction();
+            List<Course> courses = session.createQuery("from Course").getResultList();
+            session.getTransaction().commit();
 
-    private Session connectionConfig() {
-        try (SessionFactory sf = new Configuration()
-                .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(Course.class)
-                .buildSessionFactory())
-        {
-            return sf.getCurrentSession();
+            return courses;
+        } finally {
+            session.close();
         }
     }
-
 }

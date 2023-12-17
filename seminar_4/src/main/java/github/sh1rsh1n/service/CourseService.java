@@ -1,22 +1,41 @@
 package github.sh1rsh1n.service;
 
 import github.sh1rsh1n.entity.Course;
-import github.sh1rsh1n.repository.CourseRepositoryImpl;
+import github.sh1rsh1n.repository.Repository;
 
-public class CourseService {
+import java.util.List;
 
-    private CourseRepositoryImpl repository;
+public class CourseService implements Service<Course> {
 
-    public CourseService(CourseRepositoryImpl repository) {
+    private Repository repository;
+
+    public CourseService(Repository repository) {
         this.repository = repository;
     }
 
-    public void saveCourse(Course course) {
+    @Override
+    public void save(Course course) {
+        if (getAll().isEmpty() || !getAll().contains(course)) {
+            repository.add(course);
+            System.out.printf("Course %s is added successfully\n", course.getTitle());
+            return;
+        }
+        repository.update(course);
+        System.out.printf("Course %s is updated successfully\n", course.getTitle());
+    }
 
+    @Override
+    public void remove(Course course) {
 
     }
 
-    public void removeCourse(Course course){
-        
+    @Override
+    public Course getElementById(Integer integer) {
+        return null;
+    }
+
+    @Override
+    public List<Course> getAll() {
+        return repository.getAll();
     }
 }

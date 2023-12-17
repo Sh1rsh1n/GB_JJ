@@ -5,21 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar3 init commit Task2">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seminar_4/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seminar_4/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seminar_4/src/main/resources/create_query.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/data_handlers/SimpleDataHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/data_handlers/SimpleDataHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/target/classes/github/sh1rsh1n/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_3/target/test-classes/github/sh1rsh1n/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_3/target/test-classes/github/sh1rsh1n/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seminar_4/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/seminar_4/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seminar_4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/seminar_4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/entity/Course.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/repository/CourseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/repository/CourseRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/seminar_4/src/main/java/github/sh1rsh1n/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seminar_4/src/main/resources/create_query.sql" beforeDir="false" afterPath="$PROJECT_DIR$/seminar_4/src/main/resources/create_query.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seminar_4/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/seminar_4/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seminar_4/src/test/java/github/sh1rsh1n/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +34,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="JUnit3 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,51 +44,60 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2Yhivskc9FyMol73RMTnUcM0z26" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/asshi/IdeaProjects/GB_JJ/seminar_4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App (1).executor": "Run",
+    "Application.MainApp.executor": "Run",
+    "Maven.seminar_4 [clean].executor": "Run",
+    "Maven.seminar_4 [install].executor": "Run",
+    "Maven.seminar_4 [package].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "temurin-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/asshi/IdeaProjects/GB_JJ/seminar_4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
-      &quot;PostgreSQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_2\src\main\java\github\sh1rsh1n\temp" />
@@ -91,21 +107,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_1" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="github.sh1rsh1n.repository" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.App (1)">
-    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.App" />
-      <module name="seminar_4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.sh1rsh1n.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MainApp">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.App" />
       <module name="Seminar_3" />
@@ -132,6 +142,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.MainApp" />
+      <module name="seminar_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.sh1rsh1n.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="github.sh1rsh1n.task1.MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.task1.MainApp" />
       <module name="Seminar_2" />
@@ -147,12 +170,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.MainApp" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.github.sh1rsh1n.task1.MainApp" />
         <item itemvalue="Application.MainApp" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-86fc8109" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -172,6 +202,10 @@
       <workItem from="1702220717278" duration="783000" />
       <workItem from="1702659889570" duration="8267000" />
       <workItem from="1702733111505" duration="1856000" />
+      <workItem from="1702743051323" duration="426000" />
+      <workItem from="1702743510100" duration="3388000" />
+      <workItem from="1702757543329" duration="622000" />
+      <workItem from="1702797954155" duration="10146000" />
     </task>
     <task id="LOCAL-00001" summary="Seminar_1 task_1 commit #001">
       <option name="closed" value="true" />
