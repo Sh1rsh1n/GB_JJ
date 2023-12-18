@@ -66,11 +66,12 @@ public class CourseController {
                     }
                 }
                 case "3" -> {
-                    Course course = findCourseByID();
-                    System.out.printf("\nВЫ ХОТИТЕ УДАЛИТЬ КУРС: %s, хотите продолжить введите 'Y'(yes)?", course.getTitle());
+                    System.out.print("ВВЕДИТЕ ИДЕНТИФИКАТОР КУРСА: ");
+                    int id = Integer.parseInt(scanner.nextLine());
+                    System.out.printf("\nВЫ ХОТИТЕ УДАЛИТЬ КУРС: %s, хотите продолжить введите 'Y'(yes)?", service.getElementById(id).getTitle());
 
                     if (scanner.nextLine().equalsIgnoreCase("y")) {
-                        service.remove(course);
+                        service.remove(id);
                     }
                 }
                 case "4" -> {

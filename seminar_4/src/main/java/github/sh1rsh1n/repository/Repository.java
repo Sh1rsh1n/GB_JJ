@@ -6,7 +6,7 @@ public interface Repository<E> {
 
     boolean save(E e);
 
-    boolean remove(E e);
+    boolean remove(int id);
 
     E getElementById(Integer id);
 

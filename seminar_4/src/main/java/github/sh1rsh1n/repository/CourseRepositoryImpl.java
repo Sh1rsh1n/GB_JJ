@@ -36,12 +36,13 @@ public class CourseRepositoryImpl implements Repository<Course> {
     }
 
     @Override
-    public boolean remove(Course course) {
+    public boolean remove(int id) {
         try {
             session = sessionFactory.getCurrentSession();
-            if (course != null) {
+            if (id > 0) {
                 session.beginTransaction();
-                session.remove(course);
+                String query = "delete from Course where id=:param";
+                session.createQuery(query).setParameter("param", id).executeUpdate();
                 session.getTransaction().commit();
                 return true;
             }

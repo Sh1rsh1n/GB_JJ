@@ -6,7 +6,7 @@ public interface Service<E> {
 
     void save(E e);
 
-    void remove(E e);
+    void remove(int id);
 
     E getElementById(Integer integer);
 

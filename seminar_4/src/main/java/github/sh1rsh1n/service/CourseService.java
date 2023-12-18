@@ -24,13 +24,12 @@ public class CourseService implements Service<Course> {
     }
 
     @Override
-    public void remove(Course course) {
-        boolean findResult = getAll().stream().anyMatch(c -> c.equals(course));
-        if (findResult) {
-            repository.remove(course);
-            System.out.printf("Course %s is deleted successfully.\n", course.getTitle());
+    public void remove(int id) {
+        if (repository.remove(id)) {
+            System.out.println("Course is deleted successfully.\n");
+            return;
         }
-        System.out.printf("Course %s isn't found.\n", course.getTitle());
+        System.out.println("Course isn't found.\n");
     }
 
     @Override
