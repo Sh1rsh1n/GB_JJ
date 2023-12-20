@@ -10,6 +10,8 @@
         <module name="seminar_4" />
         <module name="Seminar_3" />
         <module name="Seminar_1" />
+        <module name="Seminar_5_ChatClient" />
+        <module name="Seminar_5_ChatServer" />
       </profile>
     </annotationProcessing>
   </component>

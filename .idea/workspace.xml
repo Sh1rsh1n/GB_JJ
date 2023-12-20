@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar4 005">
-      <change afterPath="$PROJECT_DIR$/seminar_4/images/img.png" afterDir="false" />
+    <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar4 005_1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seminar_4/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/seminar_4/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +232,8 @@
       <workItem from="1702818968055" duration="4612000" />
       <workItem from="1702828820019" duration="1379000" />
       <workItem from="1702837770017" duration="4435000" />
-      <workItem from="1702920491313" duration="2908000" />
+      <workItem from="1702920491313" duration="3378000" />
+      <workItem from="1702923935526" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Seminar_1 task_1 commit #001">
       <option name="closed" value="true" />
@@ -340,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702922982414</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Seminar4 005_1">
+      <option name="closed" value="true" />
+      <created>1702923508128</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702923508128</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,6 +377,7 @@
     <MESSAGE value="Seminar4 003" />
     <MESSAGE value="Seminar4 004" />
     <MESSAGE value="Seminar4 005" />
-    <option name="LAST_COMMIT_MESSAGE" value="Seminar4 005" />
+    <MESSAGE value="Seminar4 005_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seminar4 005_1" />
   </component>
 </project>
