@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c6662b8-3974-4543-bc0b-bdca7750b682" name="Changes" comment="Seminar5 init commit">
+      <change afterPath="$PROJECT_DIR$/ChatServerApp/client/src/main/ClientApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatServerApp/client/src/main/view/ClientGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatServerApp/client/src/main/view/handlers/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatServerApp/server/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB_JJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GB_JJ.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar_5_ChatClient/src/main/java/github/ishalexei/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar_5_ChatClient/src/main/java/github/ishalexei/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +51,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App (1).executor": "Run",
+    "Application.ClientApp.executor": "Run",
     "Application.MainApp (1).executor": "Run",
     "Application.MainApp.executor": "Run",
+    "Application.main.ClientApp.executor": "Run",
+    "Application.server.MainApp.executor": "Run",
     "Docker.seminar_4.db: Compose Deployment.executor": "Run",
     "Docker.seminar_4.postgres: Compose Deployment.executor": "Run",
     "Docker.seminar_4/Dockerfile.executor": "Run",
@@ -67,7 +77,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/asshi/IdeaProjects/GB_JJ/seminar_4",
+    "last_opened_file_path": "/home/dev/IdeaProjects/GB_JJ/ChatServerApp/client",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,11 +101,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ChatServerApp/client/src" />
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_2\src\main\java\github\sh1rsh1n\temp" />
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_2\src\main\java\github\sh1rsh1n\task2" />
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_1\src\main\java\github\sh1rsh1n" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ChatServerApp" />
       <recent name="C:\Users\asshi\IdeaProjects\GB_JJ\Seminar_1" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -105,14 +117,82 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="github.sh1rsh1n.repository" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="client.gui" />
+      <recent name="server.gui" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MainApp">
+  <component name="RunManager" selected="Application.ServerApp">
+    <configuration name="ClientApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClientApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="github.sh1rsh1n.MainApp" />
       <module name="seminar_4" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="github.sh1rsh1n.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainApp" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.ServerApp" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.ClientApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.ClientApp" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.ClientApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.ClientApp" />
+      <module name="GB_JJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,72 +212,20 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="seminar_4: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="docker-default">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="envFilePath" value="" />
-          <option name="removeOrphansOnComposeDown" value="false" />
-          <option name="sourceFilePath" value="seminar_4/docker-compose.yml" />
-          <option name="upDetach" value="false" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="seminar_4/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="docker-default">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="containerName" value="" />
-          <option name="sourceFilePath" value="seminar_4/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="seminar_4.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="docker-default">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="app" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="seminar_4/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="seminar_4.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="docker-default">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="db" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="seminar_4/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="seminar_4.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="docker-default">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="postgres" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="seminar_4/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Application.ServerApp" />
+      <item itemvalue="Application.main.ClientApp" />
+      <item itemvalue="Application.main.ClientApp (1)" />
+      <item itemvalue="Application.ClientApp" />
+      <item itemvalue="Application.MainApp" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServerApp" />
+        <item itemvalue="Application.main.ClientApp (1)" />
+        <item itemvalue="Application.main.ClientApp" />
         <item itemvalue="Application.MainApp" />
-        <item itemvalue="Docker.seminar_4: Compose Deployment" />
-        <item itemvalue="Docker.seminar_4.postgres: Compose Deployment" />
-        <item itemvalue="Docker.seminar_4/Dockerfile" />
-        <item itemvalue="Docker.seminar_4.db: Compose Deployment" />
+        <item itemvalue="Application.ClientApp" />
       </list>
     </recent_temporary>
   </component>
@@ -236,6 +264,7 @@
       <workItem from="1702920491313" duration="3378000" />
       <workItem from="1702923935526" duration="24000" />
       <workItem from="1703093525987" duration="2083000" />
+      <workItem from="1703519697795" duration="7596000" />
     </task>
     <task id="LOCAL-00001" summary="Seminar_1 task_1 commit #001">
       <option name="closed" value="true" />
